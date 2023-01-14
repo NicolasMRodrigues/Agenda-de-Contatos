@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Agenda de contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/agenda.png" alt="Emoji de agenda">
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-adiciona-contato">
+            <input id="nome-do-contato" type="text" size="26" required placeholder="Nome do contato">
+            <input id="numero-do-contato" type="tel" size="14" maxlength="15" required placeholder="Telefone (com DDD)">
+            <button id="btn-adicionar" class="btn" type="submit">Adicionar</button>
+            <button id="btn-remover" class="btn" onclick="deletarContato()" type="button">remover</button>
+        </form>
+        <table id='tabela-contatos' cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do contato</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

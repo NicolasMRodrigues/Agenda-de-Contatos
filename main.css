@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    color: #E8EAED;
+    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181717;
+}
+
+.container{
+    max-width: 840px;
+    min-width: 840px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+header {
+    margin-top: 120px;
+    display: flex;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+form input, form button {
+    height: 45px;
+    font-size: 18px;
+    color: black;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    
+}
+
+#nome-do-contato {
+    max-width: 297px;
+    min-width: 297px;
+    width: 100%;
+}
+
+#numero-do-contato {
+    max-width: 190px;
+    min-width: 190px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    max-width: 840px;
+    min-width: 840px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    max-width: 135px;
+    min-width: 135px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(+2px);
+}
+
+#btn-remover {
+    background-color: rgb(217, 8, 8);
+}
+
+#btn-adicionar {
+    background-color: #13aa52;
+}
+
+#btn-adicionar:hover {
+    background-color: #12773c;
+}
+
+#btn-remover:hover {
+    background-color: rgb(136, 6, 6);
+}
+
+table {
+    font-size: 24px;
+    max-width: 840px;
+    width: 100%;
+}
+
+table th {
+    font-size: 24px;
+    padding:16px;
+    border-bottom: 2px solid white;
+}
+
+table td {
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 16px 16px 16px 16px;
+    font-size: 20px;
+}
+
+.btn span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+
+    animation: ripple 1.5s;
+    opacity: 0;
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(10);
+    }
+}
